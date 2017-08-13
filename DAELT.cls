@@ -1,9 +1,9 @@
 %%*******************************************************************
 %%  DAELT 2017 LateX Class
 %%
-%%  Version 1.0 
+%%  Version 1.1 
 %%
-%%  Last Modification - 10/07/2016
+%%  Last Modification - 13/08/2016
 %%
 %%  Copyright 2017 
 %%
@@ -29,7 +29,7 @@
 %%*******************************************************************
 
 
-\ProvidesClass{DAELT}[25/03/2017 V1]
+\ProvidesClass{DAELT}[13/08/2017 V1.1]
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -66,7 +66,7 @@
 %*******************************************************************
 \usepackage{hyperref}
 \RequirePackage{datetime}
-\RequirePackage{layouts} % View the layout of a document
+\usepackage{bookmark}
 \RequirePackage{siunitx} % A comprehensive (SI) units package
 
 %*******************************************************************
