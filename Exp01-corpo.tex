@@ -76,13 +76,49 @@ A introdução requer uma breve revisão da literatura referente ao tópico de p
 
 \section{Estudo teórico}
 
-Esta seção tem o objetivo de apresentar o embasamento teórico necessário para o entendimento da solução apresentada (ver Planilha).
-\begin{enumerate}									
-	\item  Apresente a expressão para o cálculo da ondulação da tensão de saída ($\Delta V_{C0}$).
-	\item Apresente a expressão para o cálculo do valor médio da tensão de saída ($\bar{V_0}$).
-	\item  Apresente a expressão para o cálculo do ângulo de condução do diodo $D_1$ ($\gamma_D$) e do tempo de condução do mesmo ($t_D$).
-	\item  Apresente a expressão para o cálculo do valor de pico da corrente de carga ($\hat{I_0}$), valor médio ($\bar{I_0}$).
-	\item Apresente a expressão para o fator de crista, ou seja, a relação do valor de pico da corrente de carga ($\hat{I_0}$) pelo valor eficaz (${I_0}$).
+Esta seção tem o objetivo de apresentar o embasamento teórico necessário para o entendimento da solução apresentada (ver Planilha). 
+\begin{enumerate}	
+	\item Apresente uma tabela com os valores dos componentes utilizados. (Tensão de entrada, frequência, resistência, capacitância...) 								
+	\item  Apresente a expressão para o cálculo da ondulação da tensão de saída ($\Delta V_{C0}$) \eqref{eq:DeltaVC0}.
+		\begin{equation}\label{eq:DeltaVC0}
+		\Delta {V_{{C_0}}} = \frac{{\pi \hat V}}{{{\omega _0}{R_0}{C_0}}}
+		\end{equation}
+%onde: 
+%
+%\symboldescription{$\Delta {V_{{C_0}}}$}{ondulação de tensão no capacitor;}
+%\symboldescription{$\omega _0$}{velocidade angular;}
+%\symboldescription{$\hat V$}{tensão de pico de alimentação;}
+%\symboldescription{$C_0$}{capacitância de carga;}
+%\symboldescription{$R_0$}{resistência de carga;}
+%	
+	\item Apresente a expressão para o cálculo do valor médio da tensão de saída ($\bar{V_0}$) \eqref{eq:V0med}.
+	
+		\begin{equation}\label{eq:V0med}
+	{\overline V _0} = \hat V - \frac{{\Delta {V_{{C_0}}}}}{2} = \hat V - \frac{{\pi \hat V}}{{2{\omega _0}{R_0}{C_0}}}
+	\end{equation}
+	
+	\item  Apresente a expressão para o cálculo do ângulo de condução $\gamma_D$ do diodo $D_1$ \eqref{eq:AngCond} e do tempo de condução $t_D$ do mesmo \eqref{eq:TempoCond}.
+	\begin{equation}\label{eq:AngCond}
+	{\gamma _D} = \frac{1}{{\sqrt {{f_0}{R_0}{C_0}} }}
+	\end{equation}
+	
+	\begin{equation}\label{eq:TempoCond}
+	{t_D} = \frac{{{\gamma _D}}}{{{\omega _0}}} = \frac{1}{{{\omega _0}\sqrt {{f_0}{R_0}{C_0}} }}
+	\end{equation}
+		
+%	\item  Apresente a expressão para o cálculo do valor de pico da corrente de carga ($\hat{I_0}$), valor médio ($\bar{I_0}$).
+	\item Apresente a expressão para o fator de crista \eqref{eq:FatorCrista}, ou seja, a relação do valor de pico da corrente de entrada ($\hat{I_i}$) pelo valor eficaz (${I_i}$).
+	\begin{equation}\label{eq:Iipico}
+	{{\hat I}_i } = {\omega _0}{C_0}{{\hat V}_i}{\gamma _D} 
+	\end{equation}
+	
+	\begin{equation}\label{eq:Iieficaz}
+	{I_i} = {{\hat I}_i }\sqrt {\frac{{{\gamma _D}}}{{3\pi }}} 
+	\end{equation}
+	
+	\begin{equation}\label{eq:FatorCrista}
+	{F_C} = \frac{{{{\hat I}_i }}}{{{I_i}}} = \sqrt {\frac{{{\gamma _D}}}{{3\pi }}} 
+	\end{equation}
 	
 	\item Apresente a expressão para o cálculo do fator de potência da estrutura.
 	
@@ -119,9 +155,9 @@ A análise teórica, assim como as simulações, são verificadas de forma defin
 
 A \tabref{tab:componentes} apresenta a lista de componentes utilizados...
 
-\begin{table}[!hb]
+\begin{table}[!ht]
 	\centering
-	\caption{Componentes utilizados}
+	\caption{Componentes utilizados na montagem do protótipo}
 	\label{tab:componentes}
 	\begin{tabular}{@{}ccc@{}}
 		\toprule
