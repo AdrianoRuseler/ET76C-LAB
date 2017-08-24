@@ -1,0 +1,172 @@
+\titulo{MODULADOR POR LARGURA DE PULSO} % Titulo em português
+
+\title{PULSE WIDTH MODULATOR} % Título em inglês
+
+\maketitle
+
+\editorfootnote{Artigo compilado em {\today} às {\currenttime}h, referente ao experimento de número 02 da disciplina de Laboratório de Eletrônica de Potência -- ET76C, ministrada pelo Prof. Dr. Adriano Ruseler, Eng.\\
+Colabore: \url{https://www.overleaf.com/10162900nczjmzfrsbdy} }
+
+
+
+\begin{resumo}  O resumo deve ser conciso e ao mesmo tempo refletir o que é apresentado no artigo, cujo entendimento deve independer da leitura do trabalho, sem notas de rodapé, abreviações e referências. Deve ser escrito em apenas um parágrafo, de forma impessoal, sem equações ou tabelas. Evite repetir expressões ou utilizar varias vezes a mesma palavra. Busque encadear as frases em um início, meio e fim.
+\end{resumo}
+
+\begin{palavraschave }
+		Os autores devem apresentar um conjunto de até seis palavras-chave (em ordem alfabética, todas iniciais maiúsculas e separadas por vírgula) que possam identificar os principais tópicos abordados.	
+%Use a lista de palavras--chave:\\ \url{http://www.ieee.org/organizations/pubs/ani_prod/keywrd98.txt}	
+\end{palavraschave }
+
+\englishtitle
+
+\begin{abstract}
+	The abstract must be a concise yet comprehensive reflection of what is in your article, a microcosm of the full article. The abstract must be written as one paragraph, and should not contain displayed mathematical equations or tabular material.  Ensure that your abstract reads well and is grammatically correct.
+\end{abstract}
+
+\begin{keywords}
+	The abstract should include three or four different keywords or phrases, as this will help readers to find it. It is important to avoid over-repetition of such phrases as this can result in a page being rejected by search engines. For a list of suggested keywords, \url{http://www.ieee.org/organizations/pubs/ani_prod/keywrd98.txt}
+\end{keywords}
+
+
+
+
+%\section*{NOMENCLATURA}
+%
+%\symbolnomenclature{$P$}{Número de polos.}
+%\symbolnomenclature{$V_{qd}$}{Componentes $dq$ da tensão de estator.}
+
+
+% Introdução
+\section{INTRODUÇÃO}
+
+
+A seção de Introdução tem o objetivo geral de apresentar a natureza do problema abordado no trabalho, através de adequada revisão bibliográfica, o propósito e a contribuição do artigo submetido.
+
+A introdução requer uma breve revisão da literatura referente ao tópico de pesquisa. A introdução é então melhor construída como um funil descritivo, começando com temas gerais e focando lentamente no trabalho em questão. Talvez de três a quatro parágrafos sejam necessários. Uma abordagem pode ser começar com um ou dois parágrafos que introduzam o leitor para o estudo de campo geral. Os parágrafos subsequentes então descrevem como um aspecto deste campo poderia ser melhorado. O parágrafo final é essencial. Ele afirma claramente, provavelmente na primeira frase do parágrafo, qual questão experimental será respondida pelo estudo. A hipótese é então indicada. Em seguida, descreve brevemente a abordagem que foi feita para testar a hipótese. Finalmente, uma frase de resumo pode ser adicionada informando como a resposta da sua pergunta vai contribuir para o campo geral de estudo.
+
+\begin{enumerate}
+\item Contextualização do assunto/problema apresentado no artigo
+	\begin{enumerate}
+		\item Explicar o que é PWM, para o que serve.
+		\item Ilustrar a geração com portadora dente de serra.
+		\item  Explique os conceitos básicos, razão cíclica, tempo morto...		
+	\end{enumerate}									
+\item Breve revisão da literatura referente ao tópico do experimento
+	\begin{enumerate}
+		\item Apresentar formas de se implementar um modulador PWM.
+		\item Procurar convergir para o caso estudado UC3525.	
+	\end{enumerate}	
+\item Apresentação da abordagem adotada e solução sugerida
+	\begin{enumerate}
+		\item Explique de forma breve o que será apresentado.
+		\item Apresente o esquemático implementado.
+		\item  Desfecho da introdução e ligação com a seção seguinte (Estudo teórico).
+	\end{enumerate}	
+	\end{enumerate}	
+
+
+
+
+
+\section{Estudo teórico}
+
+Esta seção tem o objetivo de apresentar o embasamento teórico necessário para o entendimento da solução apresentada (ver Planilha). 
+\begin{enumerate}	
+	\item Cálculo para a escolha do resistor $R_T$, com capacitor $C_T$ previamente escolhido para uma determinada frequência de comutação. 								
+	\item  Cálculo do capacitor de \textit{soft-start}.	
+	\item Cálculo do resistor de gate, supondo o uso do MOSFET IRF740.	
+	\item  Dimensionamento e verificação dos limites de razão cíclica.	
+\end{enumerate}
+
+
+\section{Verificação por simulação}
+
+
+A análise teórica apresentada anteriormente deve ser verificada por simulação. 
+ 
+\begin{enumerate}									
+	\item   Apresente as formas de onda responsáveis pela geração do pulso PWM.
+	\begin{enumerate}
+		\item Sinal portador;
+		\item Sinal de comparação;
+		\item PWM gerado.
+	\end{enumerate}
+	\item  Verifique o equacionamento para uma razão cíclica em torno de $0,5$.
+\end{enumerate}
+
+
+
+
+
+%Body Text
+\section{Resultados experimentais}
+
+
+A análise teórica, assim como as simulações, são verificadas de forma definitiva com os resultados experimentais.
+\begin{enumerate}									
+	\item   Descrever o experimento. Listar o material utilizado.  
+	\item  Verificar experimentalmente cada item simulado na seção anterior;
+	\item  Apresente uma fotografia do protótipo montado;
+	\item  Salve as aquisições em formato .png e as coloque aqui, afim de verificar a operação adequada do modulador PWM.
+\end{enumerate}
+
+A \tabref{tab:componentesPWM} apresenta a lista de componentes utilizados...
+
+\begin{table}[!ht]
+	\centering
+	\caption{Componentes utilizados na montagem do modulador PWM}
+	\label{tab:componentesPWM}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		\textbf{Componente} & \textbf{Descrição} & \textbf{Quantidade} \\ \midrule	
+			
+		
+		Capacitor eletrolítico          & \SI{10}{\micro\farad} x \SI{25}{\V}      & 2  \\		
+		Capacitor eletrolítico          & \SI{100}{\micro\farad} x \SI{35}{\V}      & 1  \\
+		Capacitor cerâmico          & \SI{3,3}{\nano\farad} x \SI{25}{\V}      & 1  \\
+		Capacitor cerâmico          & \SI{10}{\nano\farad} x \SI{25}{\V}      & 2  \\
+		Capacitor cerâmico          & \SI{68}{\nano\farad} x \SI{25}{\V}      & 1  \\
+			CI - PWM      & UC3525 ou SG3525            & 1                   \\
+				Diodo              & 1N4148             & 2                   \\
+			Diodo   Zener          &  \SI{18}{\V} -- \SI{1/8}{\W}              & 1        \\
+				Placa padrão (Reuso)        & \SI{10}{\cm} por \SI{10}{\cm}         & 1    \\
+				Resistor       & \SI{10}{\ohm} -- \SI{1/8}{\W}    & 1    \\	
+		 Resistor       & \SI{22}{\ohm} -- \SI{1/8}{\W}    & 1    \\
+		  Resistor       & \SI{270}{\ohm} -- \SI{1/8}{\W}    & 1    \\		 
+	    Resistor       & \SI{1}{\kilo\ohm} -- \SI{1/8}{\W}    & 2     \\	     
+	      Resistor       & \SI{5.6}{\kilo\ohm} -- \SI{1/8}{\W}    & 1    \\
+	       Resistor       & \SI{6.8}{\kilo\ohm} -- \SI{1/8}{\W}    & 1    \\
+	        Resistor       & \SI{10}{\kilo\ohm} -- \SI{1/8}{\W}    & 1    \\ 
+	       Resistor       & \SI{220}{\kilo\ohm} -- \SI{1/8}{\W}    & 1    \\
+	        Resistor       & \SI{330}{\kilo\ohm} -- \SI{1/8}{\W}    & 1    \\ 	               
+	          	Soquete para CI        & 16 pinos           & 1                   \\
+	       	Transistor    NPN          & BC 548             & 1          \\
+	       Transistor    PNP          & BC 558             & 1          \\
+	          Trinpot       & \SI{1}{\kilo\ohm}    & 1    \\ \bottomrule	
+%		Conector Borne      &  KRE 2 Vias    & 2                   \\
+%		Fusível/Porta Fusível     &  \SI{5}{\A}  & 1                  \\
+	
+	\end{tabular}
+\end{table}
+
+
+
+\section{Conclusões} 
+
+Por fim, apresenta-se uma conclusão sobre o trabalho estudado.
+\begin{enumerate}								
+	\item  Desfecho do trabalho. Problemas encontrados, soluções alcançadas...
+	\item  Análise crítica, sugestões...	
+\end{enumerate}
+
+
+As conclusões devem ser as mais claras possíveis, informando aos leitores sobre a importância do trabalho dentro do contexto em que se situa. As vantagens e desvantagens em relação aos já existentes na literatura devem ser comentadas, assim como os resultados obtidos e as possíveis aplicações práticas do trabalho.
+
+
+\bibliographystyle{IEEEtran}
+
+\bibliography{References} % Inclui arquivos de referência
+
+\balance
+
+
