@@ -87,9 +87,9 @@ A análise teórica apresentada anteriormente deve ser verificada por simulaçã
 \begin{enumerate}									
 	\item   Apresente as formas de onda responsáveis pela geração do pulso PWM.
 	\begin{enumerate}
-		\item Sinal portador;
-		\item Sinal de comparação;
-		\item PWM gerado.
+		\item Sinal portador (Tensão sobre o capacitor $C_T$);
+		\item Sinal de comparação (Tensão no ponto médio do Trimpot);
+		\item PWM gerado (Tensão sobre o diodo Zener).
 	\end{enumerate}
 	\item  Verifique o equacionamento para uma razão cíclica em torno de $0,5$.
 \end{enumerate}
@@ -123,6 +123,7 @@ A \tabref{tab:componentesPWM} apresenta a lista de componentes utilizados...
 		Capacitor eletrolítico          & \SI{100}{\micro\farad} x \SI{35}{\V}      & 1  \\
 		Capacitor cerâmico          & \SI{10}{\nano\farad} x \SI{25}{\V}      & 2  \\
 			CI - PWM      & UC3525 ou SG3525            & 1                   \\
+			Conector       & KRE   & 1    \\
 				Diodo              & 1N4148             & 2                   \\
 			Diodo   Zener          &  \SI{18}{\V} -- \SI{1/8}{\W}              & 1        \\
 				Placa padrão (Reuso)        & \SI{10}{\cm} por \SI{10}{\cm}         & 1    \\
@@ -135,7 +136,7 @@ A \tabref{tab:componentesPWM} apresenta a lista de componentes utilizados...
 	          	Soquete para CI        & 16 pinos           & 1                   \\
 	       	Transistor    NPN          & BC 548             & 1          \\
 	       Transistor    PNP          & BC 558             & 1          \\
-	          Trimpot       & \SI{10}{\kilo\ohm}    & 1    \\ \bottomrule	
+	          Trimpot       & \SI{10}{\kilo\ohm}    & 1    \\  \bottomrule	
 	\end{tabular}
 \end{table}
 
