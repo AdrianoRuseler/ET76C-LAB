@@ -74,6 +74,7 @@
 	round-mode = places,
 	round-precision = 2
 }
+\sisetup{output-decimal-marker = {,}}
 
 \DeclareSIUnit \voltampere {VA} %apparent power 
 \DeclareSIUnit \var {var} %volt-ampere reactive - idle power 
