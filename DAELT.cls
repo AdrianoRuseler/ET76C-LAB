@@ -29,7 +29,7 @@
 %%*******************************************************************
 
 
-\ProvidesClass{DAELT}[13/08/2017 V1.1]
+\ProvidesClass{DAELT}[02/09/2017 V1.2]
 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -71,10 +71,10 @@
 
 %*******************************************************************
 \sisetup{
+    output-decimal-marker = {,},
 	round-mode = places,
 	round-precision = 2
 }
-\sisetup{output-decimal-marker = {,}}
 
 \DeclareSIUnit \voltampere {VA} %apparent power 
 \DeclareSIUnit \var {var} %volt-ampere reactive - idle power 
