@@ -79,6 +79,27 @@ Um único indutor será construído para os três conversores. Assim, deve-se co
 	\item Cálculo de perdas e elevação de temperatura do núcleo.
 \end{enumerate}
 
+A \tabref{tab:parametrosBuck} apresenta os parâmetros de projeto do conversor Buck.
+\begin{table}[!ht]
+	\centering
+	\caption{Parâmetros de projeto do conversor Buck}
+	\label{tab:parametrosBuck}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		\textbf{Parâmetro} & \textbf{Valor} & \textbf{Símbolo} \\ \midrule			
+		Frequência  da rede        & \SI{60}{\hertz}     & $f_0$  \\		
+		Frequência de comutação        & \SI{20}{\kilo\hertz}     & $f_s$  \\	
+		Tensão contínua de entrada         &  \SI{178}{\V}      & $V_i$  \\
+		Tensão contínua de saída         &  \SI{100}{\V}      & $V_0$  \\
+		Resistência de carga        & \SI{820}{\ohm}      & $R_0$  \\
+		Ondulação de corrente       & \SI{55}{\%}    & $\Delta_{i_{L_0}}$    \\  \bottomrule	
+	\end{tabular}
+\end{table}
+
+
+
+
+
 \subsection{Conversor Boost}
 \begin{enumerate}	
 	\item Parâmetros de projeto; 	
@@ -89,6 +110,24 @@ Um único indutor será construído para os três conversores. Assim, deve-se co
 	\item Cálculo de perdas e elevação de temperatura do núcleo.
 \end{enumerate}
 
+A \tabref{tab:parametrosBoost} apresenta os parâmetros de projeto do conversor Boost.
+\begin{table}[!ht]
+	\centering
+	\caption{Parâmetros de projeto do conversor Boost}
+	\label{tab:parametrosBoost}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		\textbf{Parâmetro} & \textbf{Valor} & \textbf{Símbolo} \\ \midrule			
+		Frequência  da rede        & \SI{60}{\hertz}     & $f_0$  \\		
+		Frequência de comutação        & \SI{20}{\kilo\hertz}     & $f_s$  \\	
+		Tensão contínua de entrada         &  \SI{178}{\V}      & $V_i$  \\
+		Tensão contínua de saída         &  \SI{240}{\V}      & $V_0$  \\
+		Resistência de carga        & \SI{3.28}{\kilo\ohm}      & $R_0$  \\
+		Ondulação de corrente       & \SI{60}{\%}    & $\Delta_{i_{L_0}}$    \\  \bottomrule	
+	\end{tabular}
+\end{table}
+
+
 \subsection{Conversor Buck-Boost}
 \begin{enumerate}	
 	\item Parâmetros de projeto; 	
@@ -98,6 +137,23 @@ Um único indutor será construído para os três conversores. Assim, deve-se co
 	\item  Dimensionamento dos condutores;
 	\item Cálculo de perdas e elevação de temperatura do núcleo.
 \end{enumerate}
+
+A \tabref{tab:parametrosBuckBoost} apresenta os parâmetros de projeto do conversor Buck-Boost.
+\begin{table}[!ht]
+	\centering
+	\caption{Parâmetros de projeto do conversor Buck-Boost}
+	\label{tab:parametrosBuckBoost}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		\textbf{Parâmetro} & \textbf{Valor} & \textbf{Símbolo} \\ \midrule			
+		Frequência  da rede        & \SI{60}{\hertz}     & $f_0$  \\		
+		Frequência de comutação        & \SI{20}{\kilo\hertz}     & $f_s$  \\	
+		Tensão contínua de entrada         &  \SI{178}{\V}      & $V_i$  \\
+		Tensão contínua de saída         &  \SI{200}{\V}      & $V_0$  \\
+		Resistência de carga        & \SI{2.46}{\kilo\ohm}      & $R_0$  \\
+		Ondulação de corrente       & \SI{55}{\%}    & $\Delta_{i_{L_0}}$    \\  \bottomrule	
+	\end{tabular}
+\end{table}
 
 \section{Verificação por simulação}
 
