@@ -1,0 +1,144 @@
+\titulo{PROJETO DO INDUTOR DE ALTA FREQUÊNCIA} % Titulo em português
+
+\title{HIGH FREQUENCY INDUCTOR DESIGN} % Título em inglês
+
+\maketitle
+
+\editorfootnote{Artigo compilado em {\today} às {\currenttime}h, referente ao experimento de número 03 da disciplina de Laboratório de Eletrônica de Potência -- ET76C, ministrada pelo Prof. Dr. Adriano Ruseler, Eng.\\
+Repositório: \url{https://github.com/AdrianoRuseler/ET76C-LAB} }
+
+
+
+\begin{resumo}  O resumo deve ser conciso e ao mesmo tempo refletir o que é apresentado no artigo, cujo entendimento deve independer da leitura do trabalho, sem notas de rodapé, abreviações e referências. Deve ser escrito em apenas um parágrafo, de forma impessoal, sem equações ou tabelas. Evite repetir expressões ou utilizar varias vezes a mesma palavra. Busque encadear as frases em um início, meio e fim.
+\end{resumo}
+
+\begin{palavraschave }
+		Os autores devem apresentar um conjunto de até seis palavras-chave (em ordem alfabética, todas iniciais maiúsculas e separadas por vírgula) que possam identificar os principais tópicos abordados.	
+%Use a lista de palavras--chave:\\ \url{http://www.ieee.org/organizations/pubs/ani_prod/keywrd98.txt}	
+\end{palavraschave }
+
+\englishtitle
+
+\begin{abstract}
+	The abstract must be a concise yet comprehensive reflection of what is in your article, a microcosm of the full article. The abstract must be written as one paragraph, and should not contain displayed mathematical equations or tabular material.  Ensure that your abstract reads well and is grammatically correct.
+\end{abstract}
+
+\begin{keywords}
+	The abstract should include three or four different keywords or phrases, as this will help readers to find it. It is important to avoid over-repetition of such phrases as this can result in a page being rejected by search engines. For a list of suggested keywords, \url{http://www.ieee.org/organizations/pubs/ani_prod/keywrd98.txt}
+\end{keywords}
+
+%\section*{NOMENCLATURA}
+%
+%\symbolnomenclature{$P$}{Número de polos.}
+%\symbolnomenclature{$V_{qd}$}{Componentes $dq$ da tensão de estator.}
+
+
+% Introdução
+\section{INTRODUÇÃO}
+
+
+A seção de Introdução tem o objetivo geral de apresentar a natureza do problema abordado no trabalho, através de adequada revisão bibliográfica, o propósito e a contribuição do artigo submetido.
+
+A introdução requer uma breve revisão da literatura referente ao tópico de pesquisa. A introdução é então melhor construída como um funil descritivo, começando com temas gerais e focando lentamente no trabalho em questão. Talvez de três a quatro parágrafos sejam necessários. Uma abordagem pode ser começar com um ou dois parágrafos que introduzam o leitor para o estudo de campo geral. Os parágrafos subsequentes então descrevem como um aspecto deste campo poderia ser melhorado. O parágrafo final é essencial. Ele afirma claramente, provavelmente na primeira frase do parágrafo, qual questão experimental será respondida pelo estudo. A hipótese é então indicada. Em seguida, descreve brevemente a abordagem que foi feita para testar a hipótese. Finalmente, uma frase de resumo pode ser adicionada informando como a resposta da sua pergunta vai contribuir para o campo geral de estudo \cite{henrique_illa_font_projeto_2002}.
+
+%\begin{enumerate}
+%\item Contextualização do assunto/problema apresentado no artigo
+%	\begin{enumerate}
+%		\item Explicar o que é PWM, para o que serve.
+%		\item Ilustrar a geração com portadora dente de serra.
+%		\item  Explique os conceitos básicos, razão cíclica, tempo morto...		
+%	\end{enumerate}									
+%\item Breve revisão da literatura referente ao tópico do experimento
+%	\begin{enumerate}
+%		\item Apresentar formas de se implementar um modulador PWM.
+%		\item Procurar convergir para o caso estudado UC3525.	
+%	\end{enumerate}	
+%\item Apresentação da abordagem adotada e solução sugerida
+%	\begin{enumerate}
+%		\item Explique de forma breve o que será apresentado.
+%		\item Apresente o esquemático implementado.
+%		\item  Desfecho da introdução e ligação com a seção seguinte (Estudo teórico).
+%	\end{enumerate}	
+%\end{enumerate}	
+
+
+
+
+
+\section{Estudo teórico}
+
+Um único indutor será construído para os três conversores. Assim, deve-se considerar cada caso (ver Planilhas \cite{noauthor_ptc_nodate}).
+
+\subsection{Conversor Buck}
+\begin{enumerate}	
+	\item Parâmetros de projeto; 	
+	\item Cálculo da indutância desejada;	
+	\item Dimensionamento do núcleo \cite{noauthor_thornton_nodate};	
+	\item Entreferro (gap);
+	\item  Dimensionamento dos condutores;
+	\item Cálculo de perdas e elevação de temperatura do núcleo.
+\end{enumerate}
+
+\subsection{Conversor Boost}
+\begin{enumerate}	
+	\item Parâmetros de projeto; 	
+	\item Cálculo da indutância desejada;	
+	\item Dimensionamento do núcleo;	
+	\item Entreferro (gap);
+	\item  Dimensionamento dos condutores;
+	\item Cálculo de perdas e elevação de temperatura do núcleo.
+\end{enumerate}
+
+\subsection{Conversor Buck-Boost}
+\begin{enumerate}	
+	\item Parâmetros de projeto; 	
+	\item Cálculo da indutância desejada;	
+	\item Dimensionamento do núcleo;	
+	\item Entreferro (gap);
+	\item  Dimensionamento dos condutores;
+	\item Cálculo de perdas e elevação de temperatura do núcleo.
+\end{enumerate}
+
+\section{Verificação por simulação}
+
+
+A análise teórica apresentada anteriormente deve ser verificada por simulação \cite{noauthor_psim_nodate}. 
+ 
+\subsection{Conversor Buck}
+\begin{enumerate}	
+	\item Verificar ondulação de corrente para a indutância calculada; 	
+\end{enumerate}
+
+\subsection{Conversor Boost}
+\begin{enumerate}	
+	\item Verificar ondulação de corrente para a indutância calculada; 	
+\end{enumerate}
+
+\subsection{Conversor Buck-Boost}
+\begin{enumerate}	
+	\item Verificar ondulação de corrente para a indutância calculada; 	
+\end{enumerate}
+
+
+
+%Body Text
+\section{Resultados experimentais}
+A análise teórica, assim como as simulações, são verificadas de forma definitiva com os resultados experimentais.
+\begin{enumerate}									
+	\item  Medir o valor da indutância obtida;
+	\item  Apresente uma fotografia do indutor montado;
+\end{enumerate}
+
+\section{Conclusões} 
+
+
+As conclusões devem ser as mais claras possíveis, informando aos leitores sobre a importância do trabalho dentro do contexto em que se situa. As vantagens e desvantagens em relação aos já existentes na literatura devem ser comentadas, assim como os resultados obtidos e as possíveis aplicações práticas do trabalho.
+
+
+\bibliographystyle{IEEEtran}
+
+\bibliography{EXP03} % Inclui arquivos de referência
+
+\balance
+
+
