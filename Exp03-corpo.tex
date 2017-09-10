@@ -92,11 +92,32 @@ A \tabref{tab:parametrosBuck} apresenta os parâmetros de projeto do conversor B
 		Tensão contínua de entrada         &  \SI{178}{\V}      & $V_i$  \\
 		Tensão contínua de saída         &  \SI{100}{\V}      & $V_0$  \\
 		Resistência de carga        & \SI{820}{\ohm}      & $R_0$  \\
-		Ondulação de corrente       & \SI{55}{\%}    & $\Delta_{i_{L_0}}$    \\  \bottomrule	
+		Ondulação de corrente       & \SI{55}{\%}    & $\Delta_{i_{L_0}}$    \\ 
+		Razão cíclica de operação       & \SI{26.6}{\%}    & $D_{buck}$    \\  \bottomrule	
 	\end{tabular}
 \end{table}
 
 
+A \tabref{tab:IndutorBuck} apresenta os parâmetros de projeto do conversor Buck.
+\begin{table}[!ht]
+	\centering
+	\caption{Parâmetros do indutor projetado para o conversor Buck}
+	\label{tab:IndutorBuck}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		\textbf{Parâmetro} & \textbf{Valor} & \textbf{Símbolo} \\ \midrule	
+			Núcleo  Thornton      & \textbf{E-30/15}    & -  \\				
+		Fator de ocupação do núcleo & \SI{0.65}{}     & $k_w$  \\
+		Densidade máxima de corrente & \SI{370}{\ampere\per\square\meter}     & $J_{max}$  \\
+		Densidade magnética máxima & \SI{0.3}{\tesla}     & $B_{max}$  \\			
+		Número de espiras        & \SI{280}{}     & $N_L$  \\	
+		Número de condutores        & \SI{1}{}     & $N_C$  \\		
+		Entreferro         &  \SI{0.1}{\mm}      & $l_g$  \\
+		Comprimento do chicote        &  \SI{15.68}{\m}      & $l_{fio}$  \\
+		Bitola do fio        &  AWG 28     & -  \\
+		Indutância obtida         & \SI{29.556}{\milli\henry}     & $L_0$  \\ \bottomrule	
+	\end{tabular}
+\end{table}
 
 
 
