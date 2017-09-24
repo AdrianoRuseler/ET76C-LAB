@@ -14,7 +14,6 @@ Repositório: \url{https://github.com/AdrianoRuseler/ET76C-LAB} }
 
 \begin{palavraschave }
 		Os autores devem apresentar um conjunto de até seis palavras-chave (em ordem alfabética, todas iniciais maiúsculas e separadas por vírgula) que possam identificar os principais tópicos abordados.	
-%Use a lista de palavras--chave:\\ \url{http://www.ieee.org/organizations/pubs/ani_prod/keywrd98.txt}	
 \end{palavraschave }
 
 \englishtitle
@@ -40,28 +39,6 @@ Repositório: \url{https://github.com/AdrianoRuseler/ET76C-LAB} }
 A seção de Introdução tem o objetivo geral de apresentar a natureza do problema abordado no trabalho, através de adequada revisão bibliográfica, o propósito e a contribuição do artigo submetido.
 
 A introdução requer uma breve revisão da literatura referente ao tópico de pesquisa. A introdução é então melhor construída como um funil descritivo, começando com temas gerais e focando lentamente no trabalho em questão. Talvez de três a quatro parágrafos sejam necessários. Uma abordagem pode ser começar com um ou dois parágrafos que introduzam o leitor para o estudo de campo geral. Os parágrafos subsequentes então descrevem como um aspecto deste campo poderia ser melhorado. O parágrafo final é essencial. Ele afirma claramente, provavelmente na primeira frase do parágrafo, qual questão experimental será respondida pelo estudo. A hipótese é então indicada. Em seguida, descreve brevemente a abordagem que foi feita para testar a hipótese. Finalmente, uma frase de resumo pode ser adicionada informando como a resposta da sua pergunta vai contribuir para o campo geral de estudo \cite{henrique_illa_font_projeto_2002}.
-
-%\begin{enumerate}
-%\item Contextualização do assunto/problema apresentado no artigo
-%	\begin{enumerate}
-%		\item Explicar o que é PWM, para o que serve.
-%		\item Ilustrar a geração com portadora dente de serra.
-%		\item  Explique os conceitos básicos, razão cíclica, tempo morto...		
-%	\end{enumerate}									
-%\item Breve revisão da literatura referente ao tópico do experimento
-%	\begin{enumerate}
-%		\item Apresentar formas de se implementar um modulador PWM.
-%		\item Procurar convergir para o caso estudado UC3525.	
-%	\end{enumerate}	
-%\item Apresentação da abordagem adotada e solução sugerida
-%	\begin{enumerate}
-%		\item Explique de forma breve o que será apresentado.
-%		\item Apresente o esquemático implementado.
-%		\item  Desfecho da introdução e ligação com a seção seguinte (Estudo teórico).
-%	\end{enumerate}	
-%\end{enumerate}	
-
-
 
 
 
@@ -123,60 +100,8 @@ A \tabref{tab:IndutorBuck} apresenta os parâmetros de projeto do conversor Buck
 
 
 
-\subsection{Conversor Boost}
-\begin{enumerate}	
-	\item Parâmetros de projeto; 	
-	\item Cálculo da indutância desejada;	
-	\item Dimensionamento do núcleo;	
-	\item Entreferro (gap);
-	\item  Dimensionamento dos condutores;
-	\item Cálculo de perdas e elevação de temperatura do núcleo.
-\end{enumerate}
-
-A \tabref{tab:parametrosBoost} apresenta os parâmetros de projeto do conversor Boost.
-\begin{table}[!ht]
-	\centering
-	\caption{Parâmetros de projeto do conversor Boost}
-	\label{tab:parametrosBoost}
-	\begin{tabular}{@{}ccc@{}}
-		\toprule
-		\textbf{Parâmetro} & \textbf{Valor} & \textbf{Símbolo} \\ \midrule			
-		Frequência  da rede        & \SI{60}{\hertz}     & $f_0$  \\		
-		Frequência de comutação        & \SI{20}{\kilo\hertz}     & $f_s$  \\	
-		Tensão contínua de entrada         &  \SI{178}{\V}      & $V_i$  \\
-		Tensão contínua de saída         &  \SI{240}{\V}      & $V_0$  \\
-		Resistência de carga        & \SI{3.28}{\kilo\ohm}      & $R_0$  \\
-		Ondulação de corrente       & \SI{60}{\%}    & $\Delta_{i_{L_0}}$    \\  \bottomrule	
-	\end{tabular}
-\end{table}
 
 
-\subsection{Conversor Buck-Boost}
-\begin{enumerate}	
-	\item Parâmetros de projeto; 	
-	\item Cálculo da indutância desejada;	
-	\item Dimensionamento do núcleo;	
-	\item Entreferro (gap);
-	\item  Dimensionamento dos condutores;
-	\item Cálculo de perdas e elevação de temperatura do núcleo.
-\end{enumerate}
-
-A \tabref{tab:parametrosBuckBoost} apresenta os parâmetros de projeto do conversor Buck-Boost.
-\begin{table}[!ht]
-	\centering
-	\caption{Parâmetros de projeto do conversor Buck-Boost}
-	\label{tab:parametrosBuckBoost}
-	\begin{tabular}{@{}ccc@{}}
-		\toprule
-		\textbf{Parâmetro} & \textbf{Valor} & \textbf{Símbolo} \\ \midrule			
-		Frequência  da rede        & \SI{60}{\hertz}     & $f_0$  \\		
-		Frequência de comutação        & \SI{20}{\kilo\hertz}     & $f_s$  \\	
-		Tensão contínua de entrada         &  \SI{178}{\V}      & $V_i$  \\
-		Tensão contínua de saída         &  \SI{200}{\V}      & $V_0$  \\
-		Resistência de carga        & \SI{2.46}{\kilo\ohm}      & $R_0$  \\
-		Ondulação de corrente       & \SI{55}{\%}    & $\Delta_{i_{L_0}}$    \\  \bottomrule	
-	\end{tabular}
-\end{table}
 
 \section{Verificação por simulação}
 
@@ -185,17 +110,7 @@ A análise teórica apresentada anteriormente deve ser verificada por simulaçã
  
 \subsection{Conversor Buck}
 \begin{enumerate}	
-	\item Verificar ondulação de corrente para a indutância calculada; 	
-\end{enumerate}
-
-\subsection{Conversor Boost}
-\begin{enumerate}	
-	\item Verificar ondulação de corrente para a indutância calculada; 	
-\end{enumerate}
-
-\subsection{Conversor Buck-Boost}
-\begin{enumerate}	
-	\item Verificar ondulação de corrente para a indutância calculada; 	
+	\item Verificar ondulação de corrente no Indutor para a indutância calculada; 	
 \end{enumerate}
 
 
