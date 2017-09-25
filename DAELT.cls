@@ -58,6 +58,7 @@
 \RequirePackage{mathptmx}
 \RequirePackage{cite}
 \RequirePackage{epstopdf}
+\RequirePackage{comment}
 
 \RequirePackage{multirow}
 \RequirePackage{booktabs}
