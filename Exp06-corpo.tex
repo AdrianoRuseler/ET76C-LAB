@@ -1,9 +1,9 @@
-\titulo{PROJETO E VERIFICAÇÃO EXPERIMENTAL DE UM CONVERSOR BOOST} % Titulo em português
-\title{DESIGN AND EXPERIMENTATION OF A BOOST CONVERTER} % Título em inglês
+\titulo{PROJETO E VERIFICAÇÃO EXPERIMENTAL DE UM CONVERSOR BUCK--BOOST} % Titulo em português
+\title{DESIGN AND EXPERIMENTATION OF A BUCK--BOOST CONVERTER} % Título em inglês
 
 \maketitle
 
-\editorfootnote{Artigo compilado em {\today} às {\currenttime}h, referente ao experimento de número 05 da disciplina de Laboratório de Eletrônica de Potência -- ET76C, ministrada pelo Prof. Dr. Adriano Ruseler, Eng.\\
+\editorfootnote{Artigo compilado em {\today} às {\currenttime}h, referente ao experimento de número 06 da disciplina de Laboratório de Eletrônica de Potência -- ET76C, ministrada pelo Prof. Dr. Adriano Ruseler, Eng.\\
 Repositório: \url{https://github.com/AdrianoRuseler/ET76C-LAB} }
 
 
@@ -38,26 +38,26 @@ Repositório: \url{https://github.com/AdrianoRuseler/ET76C-LAB} }
 
 A seção de Introdução tem o objetivo geral de apresentar a natureza do problema abordado no trabalho, através de adequada revisão bibliográfica, o propósito e a contribuição do artigo submetido.
 
-A introdução requer uma breve revisão da literatura referente ao tópico de pesquisa. A introdução é então melhor construída como um funil descritivo, começando com temas gerais e focando lentamente no trabalho em questão. Talvez de três a quatro parágrafos sejam necessários. Uma abordagem pode ser começar com um ou dois parágrafos que introduzam o leitor para o estudo de campo geral. Os parágrafos subsequentes então descrevem como um aspecto deste campo poderia ser melhorado. O parágrafo final é essencial. Ele afirma claramente, provavelmente na primeira frase do parágrafo, qual questão experimental será respondida pelo estudo. A hipótese é então indicada. Em seguida, descreve brevemente a abordagem que foi feita para testar a hipótese. Finalmente, uma frase de resumo pode ser adicionada informando como a resposta da sua pergunta vai contribuir para o campo geral de estudo \figref{fig:ret-boost}.
+A introdução requer uma breve revisão da literatura referente ao tópico de pesquisa. A introdução é então melhor construída como um funil descritivo, começando com temas gerais e focando lentamente no trabalho em questão. Talvez de três a quatro parágrafos sejam necessários. Uma abordagem pode ser começar com um ou dois parágrafos que introduzam o leitor para o estudo de campo geral. Os parágrafos subsequentes então descrevem como um aspecto deste campo poderia ser melhorado. O parágrafo final é essencial. Ele afirma claramente, provavelmente na primeira frase do parágrafo, qual questão experimental será respondida pelo estudo. A hipótese é então indicada. Em seguida, descreve brevemente a abordagem que foi feita para testar a hipótese. Finalmente, uma frase de resumo pode ser adicionada informando como a resposta da sua pergunta vai contribuir para o campo geral de estudo \figref{fig:ret-buckboost}.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=1\linewidth]{Figs/RET-Boost}
-	\caption{Conversor Boost com retificador de entrada.}
-	\label{fig:ret-boost}
+	\includegraphics[width=1\linewidth]{Figs/RET-BuckBoost}
+	\caption{Conversor Buck--Boost com retificador de entrada.}
+	\label{fig:ret-buckboost}
 \end{figure}
 
 
 
 \section{Estudo teórico}
 
-Detalhar o projeto do conversor Boost (ver Planilhas \cite{noauthor_ptc_nodate}).
+Detalhar o projeto do conversor Buck--Boost \cite{inep-cccc-2006} no modo de condução contínua (MCC), (ver Planilhas \cite{noauthor_ptc_nodate}).
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Figs/Boost}
-	\caption{Conversor Boost com retificador de entrada.}
-	\label{fig:buck}
+	\includegraphics[width=0.8\linewidth]{Figs/BuckBoost}
+	\caption{Conversor Buck--Boost com retificador de entrada.}
+	\label{fig:buckboost}
 \end{figure}
 
 \subsection{Etapas de operação}
@@ -68,14 +68,13 @@ Obter o ganho estático do conversor em modo de condução contínua.
 
 \section{Projeto}
 
-
-A \tabref{tab:parametrosBoost} apresenta os parâmetros de projeto do conversor Boost.
+A \tabref{tab:parametrosBuckBoost} apresenta os parâmetros de projeto do conversor Buck--Boost.
 
 %\begin{table}[!ht]
 %	\centering
 \begin{center}
-	\captionof{table}{Parâmetros de projeto do conversor Boost}
-	\label{tab:parametrosBoost}
+	\captionof{table}{Parâmetros de projeto do conversor Buck--Boost}
+	\label{tab:parametrosBuckBoost}
 	\begin{tabular}{@{}ccc@{}}
 		\toprule
 		\textbf{Parâmetro} & \textbf{Valor} & \textbf{Símbolo} \\ \midrule			
@@ -90,12 +89,12 @@ A \tabref{tab:parametrosBoost} apresenta os parâmetros de projeto do conversor 
 %\end{table}
 \end{center}
 
-A \tabref{tab:IndutorBoost} apresenta os parâmetros de projeto do conversor Boost.
+A \tabref{tab:IndutorBuckBoost} apresenta os parâmetros de projeto do conversor Buck--Boost.
 \begin{table}[!ht]
 	\centering
 %\begin{center}
-	\captionof{table}{Parâmetros do indutor projetado para o conversor Boost}
-	\label{tab:IndutorBoost}
+	\captionof{table}{Parâmetros do indutor projetado para o conversor Buck--Boost}
+	\label{tab:IndutorBuckBoost}
 	\begin{tabular}{@{}ccc@{}}
 		\toprule
 		\textbf{Parâmetro} & \textbf{Valor} & \textbf{Símbolo} \\ \midrule	
@@ -132,12 +131,12 @@ A análise teórica apresentada anteriormente deve ser verificada por simulaçã
 \section{Resultados experimentais}
 
 
-A \tabref{tab:componentesBoost} apresenta a lista de componentes utilizados...
+A \tabref{tab:componentesBuckBoost} apresenta a lista de componentes utilizados...
 
 \begin{table}[!ht]
 	\centering
-	\caption{Componentes adicionais utilizados na montagem do conversor Boost}
-	\label{tab:componentesBoost}
+	\caption{Componentes adicionais utilizados na montagem do conversor Buck--Boost}
+	\label{tab:componentesBuckBoost}
 	\begin{tabular}{@{}ccc@{}}
 		\toprule
 		\textbf{Componente} & \textbf{Descrição} & \textbf{Quantidade} \\ \midrule
@@ -172,7 +171,7 @@ As conclusões devem ser as mais claras possíveis, informando aos leitores sobr
 
 \bibliographystyle{IEEEtran}
 
-\bibliography{Refs/EXP05} % Inclui arquivos de referência
+\bibliography{Refs/EXP06} % Inclui arquivos de referência
 
 \balance
 
